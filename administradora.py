@@ -109,7 +109,8 @@ class Administradora:
         if origen not in self.__grafo:
             return 0
         
-        recorrido = 'Recorrido Profundidad:' + '\n' 
+        recorrido = 'Origen: ' + str(origen) + '\n' + '\n' 
+        recorrido += 'Recorrido Profundidad:' + '\n' 
         profundidad = busqueda_profundidad(self.__grafo, origen)
         for vertice in profundidad:
             recorrido += str(vertice) + '\n'
